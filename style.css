@@ -1,0 +1,233 @@
+/* styling for the body */
+body {
+  display: flex;
+  background-image: linear-gradient(
+      10deg,
+      rgba(226, 68, 28, 0.5),
+      rgba(226, 68, 28, 0.5)
+    ),
+    url("images/bck.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  font-size: 100%;
+}
+
+/* styling for the main container */
+.contact {
+  height: 90%;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+   text-align: center;
+}
+
+/* style for the first section that has the writeup */
+.dev {
+  place-self: center;
+  text-align: left;
+  width:40%;
+  padding: 0 5% 0 0;
+}
+
+/* style for the heading */
+h2 {
+  color: white;
+  font-size:250% ;
+  font-family: poppins;
+  padding: 0 8%;
+  margin: 0 0 2% 0;
+}
+
+/*style for the main writeup  */
+.p {
+  color: white;
+  font-size: 140%;
+padding: 0 8%;
+  margin: auto;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* beginning of the second section */
+.second {
+  height: 100%;
+  width: 50%;
+}
+
+/*style for the container that has blue background  */
+.free {
+  color: rgb(255, 255, 255);
+  background-color: rgb(37, 37, 172);
+  font-size: 120%;
+  margin: 5% 0 3% 0;
+  padding: 3% 3%;
+  border-radius: 8px;
+  width: 75%;
+}
+
+/* styling for the form */
+form {
+  background-color: white;
+  width: 82%;
+  height: 76%;
+  color: gray;
+  font-size: 180%s;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 8px;
+ justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 90%;
+  height: 10%;
+  display: inline-block;
+  margin: 3.5% 1%;
+  padding: 3% 1.5%;
+  border: 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 145%;
+}
+
+/* styling for the button inside the form */
+.btn {
+  padding: 3%;
+  background-color: rgb(44, 184, 98);
+  color: white;
+  font-size: 100%;
+  border: none;
+  margin: 2% 2% 0 2%;
+  border-radius: 8px;
+  width: 90%;
+}
+
+/* styling for the writeup in grey under the button */
+.click {
+  color: gray;
+  font-size: 70%;
+padding: 0 3%;
+ margin: 2% 0;
+}
+
+@media screen and (max-width: 880px){
+  h2 {
+    font-size:200% ;
+  }
+
+  .p {
+    font-size: 120%;
+     line-height: 1.5;
+  }
+}
+
+/* styling for the small screen */
+@media screen and (max-width: 700px) {
+  /* the main container */
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* style for the first section */
+  .dev {
+    margin: auto;
+    width:40%;
+    height: 40%;
+    margin-top: 3%;
+    padding: 3% 5% ;
+  }
+
+  /* style for the heading */
+  h2 {
+   font-size:170% ;
+    text-align: center;
+    padding: 2% 8%;
+    margin: 2% 0 2% 0;
+  }
+
+  /* style for the main writeup */
+  .p {
+    font-size: 100%;
+  padding: 0 5%;
+    margin: auto;
+    line-height: 1.8;
+    text-align: center;
+    place-content: center;
+    line-height: 1.5;
+  }
+  
+  /* style for the second section */
+  .second {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 70%;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
+    padding-bottom: 2%;
+  }
+
+  /* style for the part that has blue background */
+  .free {
+    font-size: 100%;
+    margin: 5% 0 2% 0;
+    padding: 2% 3%;
+    border-radius: 8px;
+    width: 75%;
+  }
+
+  /* styling for the form */
+  form {
+    width: 82%;
+    height: 76%;
+   font-size: 120%;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+ }
+
+ input {
+  width: 90%;
+  display: inline-block;
+  margin: 3.5% 1%;
+  padding: 3% 1.5%;
+  border: 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 5%;
+}
+
+/* style for the green button */
+.btn {
+  padding: 2% 3% 1% 3% ;
+  background-color: rgb(44, 184, 98);
+  color: white;
+  font-size: 80%;
+  border: none;
+  margin: 2% 2% 0 2%;
+  border-radius: 8px;
+  width: 90%;
+}
+
+  /* styling for the grey writeup under the green button */
+  .click {
+    font-size: 50%;
+    margin-top: 0;
+ 
+  }
+}
